@@ -1,0 +1,19 @@
+apiVersion: apps/v1 #  for k8s versions before 1.9.0 use apps/v1beta2  and before 1.8.0 use extensions/v1beta1
+kind: Deployment
+metadata:
+  name: my-web-app
+spec:
+  selector:
+    matchLabels:
+      app: web
+  replicas: 7
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      containers:
+        - name: app
+          image: romarcablao/my-web-app:latest
+          ports:
+            - containerPort: 80

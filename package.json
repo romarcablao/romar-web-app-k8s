@@ -1,0 +1,20 @@
+{
+  "name": "romar-web-app-k8s",
+  "version": "1.0.0",
+  "description": "Simple node app using Kubernetes(K8s)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "K8",
+    "docker",
+    "node"
+  ],
+  "author": "Romar Cablao <romarcablao@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
